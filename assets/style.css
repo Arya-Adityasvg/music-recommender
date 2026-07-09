@@ -1,0 +1,81 @@
+/* Spotify-inspired dark theme */
+
+.stApp {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+/* Main title styling */
+h1 {
+    color: #1DB954 !important;
+    font-weight: 800 !important;
+}
+
+h2, h3 {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+/* Text input box */
+.stTextInput input {
+    background-color: #242424;
+    color: #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.stTextInput input:focus {
+    border: 1px solid #1DB954;
+}
+
+/* Buttons */
+.stButton button {
+    background-color: #1DB954;
+    color: #000000;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    padding: 8px 24px;
+}
+
+.stButton button:hover {
+    background-color: #1ed760;
+    color: #000000;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #000000;
+}
+
+/* Hide Streamlit's default menu and footer */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+/* Song result cards */
+.song-card {
+    background-color: #181818;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.song-card:hover {
+    background-color: #282828;
+}
+
+.song-title {
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.song-artist {
+    color: #B3B3B3;
+    font-size: 14px;
+}
